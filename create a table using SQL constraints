@@ -1,0 +1,18 @@
+create table rambo(
+    -> Fname varchar(20) not null,
+    -> Lname varchar(20) not null,
+    -> age int,
+    -> id int not null,
+    -> unique (id));
+Query OK, 0 rows affected (0.97 sec)
+
+mysql> desc rambo;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| Fname | varchar(20) | NO   |     | NULL    |       |
+| Lname | varchar(20) | NO   |     | NULL    |       |
+| age   | int         | YES  |     | NULL    |       |
+| id    | int         | NO   | PRI | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.17 sec)
